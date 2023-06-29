@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    perspective: 10px;
+}
+
+#container {
+    transform-style: preserve-3d;
+}
+
+#bgimg {
+    transform: translateZ(-40px) scale(5.1);
+}
+
+#fgimg {
+    transform: translateZ(-20px) scale(3);
+}
+
+section {
+    /* bg-#2d2d2d text-white p-[5rem] */
+    background-color: rgb(45, 45, 45);
+    color: white;
+    /* padding: 5rem; */
+}
+
+.bg1 {
+    /* bg-[url('./images/sport-1.jpg')]  */
+    background-image: url('./images/sport-1.jpg');
+}
+
+.bg2 {
+    /* bg-[url('./images/sport-2.jpg')]  */
+    background-image: url('./images/sport-2.jpg');
+}
+
+.bg3 {
+    /* bg-[url('./images/sport-3.jpg')]  */
+    background-image: url('./images/sport-3.jpg');
+}
+
+.secHeading {
+    /* test-[5rem] px-0 py-[10rem]  */
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.texxt {
+    /* text-[1.5rem] px-0 py-[10rem] mx-[5rem] my-0  */
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    color: black;
+    font-size: 3.5rem;
+}

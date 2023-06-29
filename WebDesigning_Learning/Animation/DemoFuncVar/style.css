@@ -1,0 +1,19 @@
+* {
+    --var1 : #9ace9e;
+}
+
+:root{
+    --var2 : rgb(238, 181, 128);
+}
+
+.container {
+    border: 1px solid black;
+    background-color: var(--var1);
+}
+
+.box {
+    width: 500px;
+    border: 1px solid blue;
+    --pinklemon:#ecbbf1;
+    background-color: var(--pinklemon);
+}

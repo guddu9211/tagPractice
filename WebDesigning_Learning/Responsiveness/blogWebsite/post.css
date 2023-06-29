@@ -1,0 +1,37 @@
+.container {
+    border: 1px solid red;
+    background-color: antiquewhite;
+    height: 700px;
+    width: 504px;
+
+    display: grid;
+    grid-template-rows: 30px 1fr 1fr 30px;
+    grid-template-columns: 1fr;
+    grid-gap: 4px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "side"
+    "ft";
+
+}
+
+.header {
+    background-color: blue;
+    grid-area: hd;
+}
+
+.sidebar {
+    background-color: yellowgreen;
+    grid-area: side;
+}
+
+.content {
+    background-color: pink;
+    grid-area: main;
+}
+
+.footer {
+    background-color: orchid;
+    grid-area: ft;
+}

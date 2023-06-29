@@ -1,0 +1,41 @@
+.container {
+    height: 500px;
+    width: 800px;
+    border: 3px solid black;
+
+    --var1: rgb(183, 244, 183);
+    background-color: var(--var1);
+
+    display: flex;
+}
+
+.box {
+    height:150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px solid blue;
+    --pinklemon:#9ddcf7;
+    background-color: var(--pinklemon);
+
+    /* sets the time for this transition effect */
+    /* transition: 1s;          */
+    /* transition: all 1s ease-in 1s; */
+    transition: all 1s ease-in;
+
+    /* the properties over which we can apply the transitions (writing 'all' in value degrades performance while rendering, so its a bad practice) */
+    /* transition-property:background-color; */
+    /* transition-property: none; */
+
+    /* amount of time after which transition will take effect */
+    /* transition-delay: 1s; */
+
+    
+
+}
+
+/* I want to change the box's background color whenever I hover over it */
+.box:hover {
+    background-color: rgb(221, 140, 140);
+    transform: translateX(500px) rotate(360deg) scale(-2);
+    
+}

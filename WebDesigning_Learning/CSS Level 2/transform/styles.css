@@ -1,0 +1,27 @@
+.box{
+    border: 1px solid black;
+    width: 200px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.mydiv {
+    margin: 10px;
+    border: 1px solid black;
+    width: 200px;
+    min-height: 100px;
+}
+
+.trnslate {
+    border: 1px solid brown;
+    width: 200px;
+    height: 100px;
+    /* transform: perspective(10px) translateZ(-10px); */
+    transform: perspective(25px) scaleZ(2);
+}
+
+.par {
+    width: 500px;
+    height: 200px;
+    border: 1px solid blue;
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    gap:10px;
+
+    flex-direction: column-reverse;
+    align-self: flex-end;
+
+}
+
+.box {
+    height: 100px;
+    width: 100px; 
+    /* max-height: 250px; */
+    background-color: burlywood;
+    border: 1px solid black;
+}

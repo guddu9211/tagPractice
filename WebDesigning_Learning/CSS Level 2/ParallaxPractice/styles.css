@@ -1,0 +1,33 @@
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+    /* flex-direction: column; */
+}
+
+.background {
+    transform: translateZ(-40px) scale(6);
+}
+
+.foreground {
+    transform: translateZ(-20px) scale(1);
+}
+
+.background, .foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}

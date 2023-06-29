@@ -1,0 +1,186 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 50px;
+}
+
+
+/* hero section css starts here  */
+
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faded-text {
+    user-select: none;
+    font-size: 7em;
+    color: aquamarine;
+
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-section-heading {
+    font-weight: 500;
+    font-size: 35;
+    color: #343562;
+}
+
+.role {
+    color:yellow;
+
+}
+
+.hero-section-right {
+    position: relative;
+
+}
+
+.absolute {
+    position: absolute;
+}
+
+.user-image {
+    z-index: -9;
+    width: 250px;
+    padding: 2.9rem;
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+
+@keyframes scaleImage {
+    0% {
+        filter: grayscale(0);
+        transform: scale(1);
+        box-shadow: 3px 3px 10px black;
+    }
+
+    50% {
+        filter: grayscale(1);
+        transform: scale(1.1);
+        
+    }
+
+    100% {
+        filter: grayscale(0);
+        transform: scale(1);
+        box-shadow: 3px 3px 10px black;
+    }
+}
+
+
+.icon-dots {
+    z-index: 9;
+    bottom: -1rem;
+    right: 0px;
+    animation-name: dotsAnim;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dotsAnim {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.icon-cube {
+    z-index: 9;
+    top: -0.8em;
+    right: 1em;
+    animation-name: cubeRotate;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cubeRotate {
+    0% {
+        transform: translateY(0px) rotateY(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotateY(180deg);
+    }
+    
+    100% {
+        transform: translateY(0px) rotateY(0deg);
+    }
+}
+
+.icon-circle {
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    animation-name: shakeEffect;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shakeEffect {
+    0% {
+        left: 0;
+        bottom: 0;
+        /* transform: translate(0,0); */
+    }
+
+    50% {
+        left: 5%;
+        bottom: 10%;
+        /* transform: translate(-15px,-15px); */
+    }
+    
+    100% {
+        left: 0;
+        bottom: 0;
+        /* transform: translate(0,0); */
+    }
+}
+
+.icon-plus {
+    z-index: 9;
+    left: 50%;
+    animation-name: shakeEffPlus;
+    animation-duration: 5 s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shakeEffPlus {
+    50% {
+        top: 3%;
+        left: 40%;
+    }
+}
+
+/* hero section css ends here  */
+
+
+
+
+

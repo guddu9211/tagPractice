@@ -1,0 +1,23 @@
+.box {
+    height: 200px;
+    width: 400px;
+    border: 10px solid black;
+    /* text-align: center; */
+    background-color: orange;
+    margin: 10px;
+    /* padding: 20px;          PADDING CHANGES THE SIZE OF BOX */
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+#org {
+    background-color: orange;
+}
+
+#wht {
+    background-color: rgb(249, 239, 239);
+}
+
+#grn {
+    background-color: green;
+}

@@ -1,0 +1,59 @@
+.container {
+    height: 255px;
+    width: 100%;
+    border: 3px solid black;
+
+    --var1: rgb(239, 240, 153);
+    background-color: var(--var1);
+
+}
+
+.box {
+    height:212px;
+    width: 212px;
+    margin: 20px;
+    border: 2px solid blue;
+    --pinklemon:#e2b8e07b;
+    background-color: var(--pinklemon);
+
+    /* adding animation */
+    animation-name: babbar;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    /* animation-direction: normal; */
+    
+}
+
+@keyframes babbar {
+    0% {
+        width: 100px;
+        background-color: aqua;
+    }
+    30% {
+        width: 200px;
+        background-color: blanchedalmond;
+    }
+    65% {
+        width: 400px;
+        background-color: purple;
+    }
+    90% {
+        width: 90%;
+        background-color: aliceblue;
+    }
+    100% {
+        width: 97%;
+        background-color: limegreen;
+    }
+}
+
+/* learning to add keyframes for an animation */
+/* @keyframes babbar {
+    from{
+        width: 212px;
+    }
+
+    to {
+        width: 800px;
+    }
+} */
