@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Accept-Post" content="text/html">
+    <title>Receiver</title>
+    <script>
+        function initialize() {
+            let currPage = window.location.search;
+            let urlParams = new URLSearchParams(currPage);
+            let str = "";
+            let data = {};
+            
+            urlParams.forEach((val,k) => {
+                console.log(k,val);
+                str += k + ' <---> '+val+"\n";
+                data[k] = val;
+            });
+
+            // element which display the parameters in string format
+            let elem = document.querySelector('.params');
+            elem.textContent = str;
+
+            console.log(data);
+            // display the data in json format
+            let paramDict = document.querySelector('.postParams');
+            let jsonified = JSON.stringify(data);
+            paramDict.textContent = jsonified;
+
+        }
+
+        
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            console.log("DOM fully loaded and parsed");
+            initialize();
+        });
+    </script>
+</head>
+<body>
+    <p>Hello World</p>
+    <div class="params">
+        0
+    </div>
+    <div class="postParams">
+        0
+    </div>
+</body>
+</html>
